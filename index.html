@@ -119,7 +119,7 @@
 <div class="header">
     <div style="display: flex; align-items: center; gap: 10px;">
         <span style="font-size: 24px;">🏢</span>
-        <h1>Hệ Thống Quản Trị Dubai PRO</h1>
+        <h1>Hệ Thống Quản Trị Dubai 1-7-2020 PRO MAX</h1>
     </div>
     <div style="display: flex; gap: 5px;">
         <button class="btn btn-secondary btn-sm" onclick="exportData()">💾 Sao Lưu</button>
@@ -772,4 +772,5 @@
     const handleFileImport = (e) => { const file = e.target.files[0]; if(!file) return; const reader = new FileReader(); reader.onload = (e) => { try { const data = JSON.parse(e.target.result); Object.keys(data).forEach(k => localStorage.setItem(k, data[k])); alert('Phục hồi xong!'); location.reload(); } catch { alert('File lỗi!'); } }; reader.readAsText(file); };
 </script>
 </body>
+
 </html>
